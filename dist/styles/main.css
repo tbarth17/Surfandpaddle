@@ -115,7 +115,10 @@ h2 {
   font-size: 13px; }
 
 .smallauthor-overlay {
-  border-radius: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   height: 22px;
   width: 22px;
   position: relative;
@@ -125,14 +128,16 @@ h2 {
   background-color: #1275bf;
   z-index: 10;
   opacity: 0.6; }
-
-.smallauthor-overlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0; }
+  .smallauthor-overlay:hover {
+    transition-property: opacity;
+    opacity: 0;
+    transition-duration: 1s; }
 
 .smallauthor {
-  border-radius: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   height: 22px;
   width: 22px;
   position: relative;
@@ -142,7 +147,7 @@ h2 {
 
 .smallname {
   float: left;
-  color: #055faa;
+  color: #0069b6;
   position: relative;
   top: 10px;
   left: 2.5%; }
@@ -155,7 +160,7 @@ h2 {
   position: relative;
   left: 4.5%;
   top: 11px;
-  color: #a0b3c0; }
+  color: #a3b3bf; }
 
 .articlebody {
   font-family: 'Open Sans', sans-serif;
@@ -165,17 +170,14 @@ h2 {
   margin-top: 26px; }
 
 .woah {
-  border-left: 1px solid #a0b3c0; }
-
-.woah {
   font-size: 26px;
-  color: #106db3;
+  color: #083451;
   margin-left: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: 26px;
   padding-left: 17px;
-  border-left: 2px solid #d3d3d3; }
+  border-left: 2px solid #a3b3bf; }
 
 p {
   letter-spacing: -1px;
@@ -189,8 +191,8 @@ p {
 .readcomments {
   height: 30px;
   width: 158px;
-  margin-top: -30px;
   margin-left: 0.5%;
+  margin-top: -30px;
   background-color: #a3b3bf;
   z-index: 1; }
 
@@ -232,16 +234,15 @@ p {
   position: relative;
   height: 30px;
   width: 158px;
+  margin-left: 0.5%;
   z-index: 10;
   margin-top: 19px;
-  margin-left: 0.5%;
   background-color: #1275bf;
   opacity: 0; }
-
-.readcommentsoverlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0.6; }
+  .readcommentsoverlay:hover {
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0.6; }
 
 .readlaterimg {
   height: 25px;
@@ -254,25 +255,24 @@ p {
   position: relative;
   height: 30px;
   width: 128px;
+  left: 26.4%;
   z-index: 15;
   background-color: #1275bf;
   opacity: 0;
-  left: 26.4%;
   margin-top: -46px; }
-
-.readlateroverlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0.6; }
+  .readlateroverlay:hover {
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0.6; }
 
 .readlater {
   position: relative;
   height: 30px;
   width: 128px;
-  z-index: 1;
-  background-color: #a3b3bf;
   left: 26.4%;
-  margin-top: -46px; }
+  top: -46px;
+  z-index: 1;
+  background-color: #a3b3bf; }
 
 .readlatertext {
   margin-left: 35.5%;
@@ -285,19 +285,26 @@ p {
   font-size: 14px; }
 
 .shareoverlay {
+  position: relative;
   height: 30px;
   width: 154px;
-  margin-top: -30px;
   left: 47.6%;
+  margin-top: -78px;
   background-color: #1275bf;
-  position: relative;
   opacity: 0;
   z-index: 15; }
+  .shareoverlay:hover {
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0.6; }
 
-.shareoverlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0.6; }
+.share {
+  position: relative;
+  height: 30px;
+  width: 154px;
+  left: 47.6%;
+  margin-top: -32px;
+  background-color: #a3b3bf; }
 
 .shareimg {
   float: left;
@@ -315,14 +322,6 @@ p {
   left: 11%;
   padding-right: 0; }
 
-.share {
-  height: 30px;
-  width: 154px;
-  margin-top: -30px;
-  position: relative;
-  left: 47.6%;
-  background-color: #a3b3bf; }
-
 .sidebar {
   margin-right: 12.5%;
   margin-left: 66.3%;
@@ -331,29 +330,34 @@ p {
 .bigauthor-overlay {
   width: 84px;
   height: 84px;
-  border-radius: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   position: relative;
-  top: 12px;
   left: 35.5%;
   right: 35.5%;
+  top: 12px;
   background-color: #1275bf;
   opacity: 0.7;
   z-index: 10; }
-
-.bigauthor-overlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0; }
+  .bigauthor-overlay:hover {
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0; }
 
 .bigauthor {
   width: 84px;
   height: 84px;
-  border-radius: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   position: relative;
-  opacity: 1;
-  top: -72px;
   left: 35.5%;
-  right: 35.5%; }
+  right: 35.5%;
+  opacity: 1;
+  top: -72px; }
 
 h5 {
   font-size: 16px;
@@ -371,18 +375,23 @@ h5 {
 
 .connectlinks {
   text-decoration: none;
-  color: #a0b3c0; }
+  color: #a3b3bf; }
 
-#twitter {
-  padding-right: 10px; }
+.twitter {
+  padding-right: 10px;
+  text-decoration: none; }
 
-#facebook {
+.facebook {
   padding: 5px;
-  border-left: 1px #a0b3c0 solid;
-  border-right: 1px #a0b3c0 solid; }
+  border-left: 1px #a3b3bf solid;
+  border-right: 1px #a3b3bf solid;
+  text-decoration: none;
+  color: #a3b3bf; }
 
-#instagram {
-  padding-left: 10px; }
+.instagram {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #a3b3bf; }
 
 .ad {
   width: 276px;
@@ -398,11 +407,10 @@ h5 {
   background-color: #1275bf;
   z-index: 10;
   opacity: 0.6; }
-
-.ad-overlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0; }
+  .ad-overlay:hover {
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0; }
 
 .aboutad {
   position: relative;
@@ -410,11 +418,11 @@ h5 {
   right: -70%;
   font-family: 'Open sans' sans-serif;
   font-size: 13px;
-  color: #a0b3c0; }
+  color: #a3b3bf; }
 
 h4 {
   font-family: 'Oswald' sans serif;
-  color: #106db3;
+  color: #083451;
   font-size: 17px;
   letter-spacing: -0.5px; }
 
@@ -422,7 +430,7 @@ h4 {
   margin-top: 48px; }
 
 .sidebarsection-content > a {
-  color: #a0b3c0; }
+  color: #a3b3bf; }
 
 .sidebarsection-content {
   font-family: 'Open Sans' sans serif;
@@ -431,15 +439,14 @@ h4 {
   letter-spacing: -0.5px;
   margin-top: -17px;
   line-height: 1.715em;
-  color: #a0b3c0; }
+  color: #a3b3bf; }
 
 a {
-  color: #a0b3c0; }
-
-a:hover {
-  transition-property: color;
-  transition-duration: 0.5s;
-  color: blue; }
+  color: #a3b3bf; }
+  a:hover {
+    transition-property: color;
+    transition-duration: 0.5s;
+    color: blue; }
 
 .posttitle {
   width: 100%;
@@ -449,8 +456,8 @@ a:hover {
   font-size: 64px;
   font-family: 'Oswald' sans-serif;
   text-align: center;
-  color: #083452;
-  border-top: 1px solid #e1e7ea; }
+  color: #083451;
+  border-top: 1px solid #5e686f; }
 
 .overlay {
   width: 25%;
@@ -460,11 +467,10 @@ a:hover {
   opacity: 0.9;
   position: relative;
   z-index: 15; }
-
-.overlay:hover {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0; }
+  .overlay:hover {
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0; }
 
 .postoverlaytitle {
   float: left;
@@ -474,11 +480,19 @@ a:hover {
   margin-right: 6%;
   margin-top: 86%;
   opacity: 1;
-  color: #003353;
+  color: #083451;
   position: relative;
   z-index: 25; }
 
-#oystertitle {
+.postoverlaytitlelong {
+  float: left;
+  font-family: 'oswald' sans serif;
+  font-size: 29px;
+  margin-left: 6%;
+  opacity: 1;
+  color: #083451;
+  position: relative;
+  z-index: 25;
   margin-top: 75.5%;
   line-height: 35px;
   margin-right: 7%; }
@@ -494,8 +508,8 @@ a:hover {
 .whitetitlesbox {
   width: 25%;
   height: 330px;
-  margin: 0;
   float: left;
+  margin: 0;
   position: relative;
   top: -660px; }
 
@@ -503,21 +517,29 @@ a:hover {
   float: left;
   font-family: 'oswald' sans serif;
   font-size: 29px;
-  margin-top: 86%;
   margin-left: 6%;
+  margin-top: 86%;
   margin-right: 7%;
   color: white;
   position: relative;
   z-index: 5; }
 
-#longertitle {
+.whitetitleslong {
+  float: left;
+  font-family: 'oswald' sans serif;
+  font-size: 29px;
+  margin-left: 6%;
   margin-top: 75.5%;
+  margin-right: 7%;
+  color: white;
+  position: relative;
+  z-index: 5;
   line-height: 35px; }
 
 footer {
   width: 100%;
   height: 96px;
-  background-color: #003353;
+  background-color: #083451;
   margin-top: 330px; }
 
 .ironyardlogo {
@@ -526,7 +548,7 @@ footer {
   top: -646px;
   margin-left: 151px; }
 
-#tagline {
+.tagline {
   height: 20px;
   font-family: "Open sans" sans-serif;
   float: left;
@@ -546,17 +568,18 @@ footer {
 
 .navitems > a {
   text-decoration: none;
-  font-family: "Open Sans" sans serif; }
+  font-family: "Open Sans" sans serif;
+  color: #a3b3bf; }
 
 .nav2 {
-  border-right: 1px solid #a0b3c0;
-  border-left: 1px solid #a0b3c0;
+  border-right: 1px solid #a3b3bf;
+  border-left: 1px solid #a3b3bf;
   padding-left: 7px;
   margin-left: 3px;
   padding-right: 7px;
   margin-right: 3px; }
 
 .nav3 {
-  border-right: 1px solid #a0b3c0;
+  border-right: 1px solid #a3b3bf;
   padding-right: 7px;
   margin-right: 3px; }
