@@ -501,35 +501,88 @@ a {
   width: 25%;
   height: 330px;
   float: left;
-  position: relative;
-  top: -330px;
+  margin-top: -330px;
   z-index: 0; }
+
+.popular2 {
+  width: 25%;
+  height: 330px;
+  float: left;
+  margin-top: -330px;
+  z-index: 0;
+  position: relative;
+  left: 25%; }
+
+.popular3 {
+  width: 25%;
+  height: 330px;
+  float: left;
+  margin-top: -330px;
+  z-index: 0;
+  position: relative;
+  left: 50%; }
+
+.popular4 {
+  width: 25%;
+  height: 330px;
+  float: left;
+  margin-top: -330px;
+  z-index: 0;
+  position: relative;
+  left: 75%; }
 
 .whitetitlesbox {
   width: 25%;
   height: 330px;
   float: left;
   margin: 0;
+  margin-top: -660px; }
+
+.whitetitlesbox2 {
+  width: 25%;
+  height: 330px;
+  float: left;
+  margin: 0;
+  margin-top: -660px;
   position: relative;
-  top: -660px; }
+  left: 25%; }
+
+.whitetitlesbox3 {
+  width: 25%;
+  height: 330px;
+  float: left;
+  margin: 0;
+  margin-top: -660px;
+  position: relative;
+  left: 50%; }
+
+.whitetitlesbox4 {
+  width: 25%;
+  height: 330px;
+  float: left;
+  margin: 0;
+  margin-top: -660px;
+  position: relative;
+  left: 75%; }
 
 .whitetitles {
   float: left;
   font-family: 'oswald' sans serif;
   font-size: 29px;
   margin-left: 6%;
-  margin-top: 86%;
+  margin-top: 21em;
   margin-right: 7%;
   color: white;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  outline: 1px solid red; }
 
 .whitetitleslong {
   float: left;
   font-family: 'oswald' sans serif;
   font-size: 29px;
   margin-left: 6%;
-  margin-top: 75.5%;
+  margin-top: 19.85em;
   margin-right: 7%;
   color: white;
   position: relative;
@@ -545,7 +598,7 @@ footer {
 .ironyardlogo {
   float: left;
   position: relative;
-  top: -646px;
+  top: 14px;
   margin-left: 151px; }
 
 .tagline {
@@ -553,17 +606,16 @@ footer {
   font-family: "Open sans" sans-serif;
   float: left;
   position: relative;
-  top: -621px;
+  top: 39px;
   font-size: 13px;
   color: #a3b3bf;
-  margin-left: 1%; }
+  margin-left: 10px; }
 
 .navitems {
-  position: relative;
   display: inline-block;
-  bottom: 621px;
-  left: 22.5%;
-  font-size: 14px;
+  margin-top: 38px;
+  margin-left: 24%;
+  font-size: 13px;
   height: 20px; }
 
 .navitems > a {
