@@ -57,6 +57,7 @@ $footer-text: #a3b3bf;
 
 body {
   margin: 0;
+  /* width: 1300px; */
 }
 
 header{
@@ -159,6 +160,15 @@ h1 {
   font-size: 15px;
   letter-spacing: 0.015em;
   color: $heading-dark-blue;
+}
+
+.outer-container{
+  width: 100%;
+  overflow: scroll;
+}
+
+.content-container {
+  width: 1300px;
 }
 
 .content {
@@ -266,11 +276,6 @@ p {
 .pfour {
   margin-top: 26px;
 }
-
-
-
-
-
 
 .readcomments {
   @include read-comments-layout;
@@ -407,6 +412,7 @@ p {
   margin-top: 2px;
   position: relative;
   left: 11%;
+  padding-top: 2px;
   padding-right: 0;
 }
 
@@ -545,6 +551,11 @@ a {
 }
 }
 
+.popularposts {
+  display: block;
+  width: 100%;
+}
+
 .posttitle {
   width: 100%;
   padding-top: 23px;
@@ -575,7 +586,7 @@ a {
 .postoverlaytitle {
   @include bottom-links-bar;
   margin-right: 6%;
-  margin-top: 86%;
+  margin-top: 279px;
   opacity: 1;
   color: $heading-dark-blue;
   position:relative;
@@ -588,7 +599,7 @@ a {
   color: $heading-dark-blue;
   position:relative;
   z-index: 25;
-  margin-top: 75.5%;
+  margin-top: 245px;
   line-height: 35px;
   margin-right: 7%;
 }

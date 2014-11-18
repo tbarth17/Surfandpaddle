@@ -11,7 +11,7 @@ gulp.task('css', function() {
         includePaths: ['app/styles'],
         errLogToConsole: true
       } ) )
-    .pipe( gulp.dest('dist/styles') )
+    .pipe( gulp.dest('dist/styles') );
 });
 
 gulp.task('express', function() {
